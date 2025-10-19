@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rushikesh Thorat Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./src/tab-avatar.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +19,7 @@
             <a href="#home">&#60; /Home &#62</a>
             <!-- <a href="#about_me">&#60; /About_Me &#62</a> -->
             <a href="#skills">&#60; /Skills &#62</a>
-            <a href="#projects">&#60; /Projects &#62</a>
+            <a href="#project ">&#60; /Projects &#62</a>
         </nav>
     </header>
   <!-- header ends here -->
@@ -57,7 +57,7 @@
 </section>
 
 <section class="skills" id="skills">
-    <h2 class="skill-header">My Skills</h2>
+    <h1 class="skill-header">My Skills</h1>
 
     <div class="skills-wrapper">
         <div class="first-set animate__animated animate__pulse">
@@ -163,41 +163,48 @@
     </div>
 </section>
 
-<section>
-    <div class="projects">
-        <div class="product-card">
-  <div class="media-slider">
-    <div class="media-item">
-      <img src="./src/project/stackover/3.png" alt="Product Image 1">
-    </div>
-    <div class="media-item">
-      <img src="./src/project/stackover/4.png" alt="Product Image 2">
-    </div>
-    <div class="media-item">
-      <img src="./src/project/stackover/5.png" alt="Product Image 2">
-    </div>
-    <div class="media-item">
-      <video controls>
-        <source src="./src/video1.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
+<section id="project" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
 
-  <div class="card-content">
-    <h3 class="product-title">Awesome Product</h3>
-    <p class="product-description">
-      This is a high-quality product with amazing features. Works perfectly for your needs.
-    </p>
-    <div class="product-tags">
-      <span>#Tech</span>
-      <span>#Gadget</span>
-      <span>#NewArrival</span>
-    </div>
-  </div>
-</div>
+    <div class="project-card">
+      <div class="project-left">
+        <!-- 🖼️ Project Image -->
+        <div class="project-image">
+          <img src="./src/project/stackover/3.png" alt="Project Screenshot">
+        </div>
 
+        <!-- 🎥 Embedded YouTube Video -->
+        <div class="project-video">
+          <iframe 
+            src="https://www.youtube.com/embed/cN3qDJnyIPA?si=PQX8OxaHCDZ9Q9Le" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="project-right">
+        <h3 class="project-title">SolutionBox - StackOverflow Clone</h3>
+        <p class="project-desc">
+          This is a Stack Overflow Clone a full-stack web application built using the MERN stack:
+        </p>
+        <p class="project-desc">
+             Q&A web application where users can ask questions, post answers, and vote on responses.
+        </p>
+
+        <div class="tech-stack">
+          <h4>Tech Stack</h4>
+          <p class="stack-tags">React, Express, Node.js, MongoDB, Tailwind</p>
+        </div>
+
+        <p class="project-duration">Start: 01/2025 — To 04/2025</p>
+
+        <a href="https://github.com/Rushikesh-Thorat/stachoverflow-clone-mern" class="github-btn">GitHub Link</a>
+      </div>
     </div>
-</section>
+  </section>
 
 
     <script src="script.js"></script>
