@@ -50,7 +50,7 @@ body {
       border: none;
       border-radius: 30px;
       padding: 12px 24px;
-      font-size: 16px;
+      font-size: 14px;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
@@ -259,13 +259,22 @@ body {
       gap: 10px;
     }
 
-    .education-section p.subtitle {
-      color: #ffffff;
-      font-size: 1rem;
-      margin-top: 5px;
-      margin-bottom: 40px;
-      font-style: italic;
-    }
+   .education-section p.subtitle {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* ✅ Same selector inside media query */
+@media (max-width: 500px) {
+  .education-section p.subtitle {
+    font-size: 10px;
+  }
+}
+
+
 
     .education-card {
       display: flex;
@@ -319,6 +328,7 @@ body {
         flex-direction: column;
         text-align: center;
       }
+      
 
       .education-card img {
         width: 100%;
@@ -457,10 +467,139 @@ background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1
   color: black;
 }
 
+
+/* -------------------- footer  -------------------- */
+.footer {
+background: #07424f;
+background: linear-gradient(90deg, rgba(7, 66, 79, 1) 0%, rgba(227, 83, 237, 1) 100%);  padding: 3rem 1rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-about .tagline {
+  margin-top: 1rem;
+  color: #f9c74f;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f9c74f;
+}
+
+.footer-links i {
+  margin-right: 8px;
+}
+
+.footer-contact p a {
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+.footer-contact p a:hover {
+    color: #f9c74f;
+
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #f9c74f;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f9c74f;
+}
+
+/* 🔻 Footer Bottom Line */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.footer-bottom span {
+  color: #f9c74f;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  /* Two-section layout for mobile */
+  .footer-links,
+  .footer-contact {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .footer-about {
+    margin-bottom: 2rem;
+  }
+
+  .footer-contact .social-icons {
+    justify-content: center;
+  }
+}
 /* ✅ Responsive for Mobile */
 @media (max-width: 768px) {
   .projects-section {
-    margin-bottom: 130px;
+    margin-bottom: 10px;
   }
   .project-card {
     flex-direction: column;
@@ -619,5 +758,17 @@ background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1
   }
   .btn-box{
     font-size: 12px;
+  }
+   .contact-btn {
+  font-size: 12px; 
+  }
+  .education-section h2{
+        font-size: 18px;
+  }
+  .skill-header{
+    font-size: 18px;
+  }
+  .section-title{
+    font-size: 18px;
   }
 }
