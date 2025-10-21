@@ -11,6 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   min-height: 100vh;
   background: url("./src/background.jpg");
@@ -40,6 +41,25 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
 }
+ .contact-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: linear-gradient(90deg, #60a5fa, #a855f7);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .contact-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
 
 .logo {
   height: 80px;
@@ -156,6 +176,8 @@ body {
 .btn-box {
   display: flex;
   gap: 15px;
+  align-items: center;
+  cursor:pointer;
 }
 
 .btn {
@@ -222,6 +244,91 @@ body {
     color: rgb(18, 9, 152);
  }
 
+
+ /* ----------Education Section---------- */
+ .education-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .education-section h2 {
+      font-size: 2rem;
+      color: #000000;
+      display: inline-flex;
+      align-items: center;  
+      gap: 10px;
+    }
+
+    .education-section p.subtitle {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+    .education-card {
+      display: flex;
+      align-items: center;
+      background: #2dafcc;
+      background: linear-gradient(90deg, rgba(45, 175, 204, 1) 0%, rgba(227, 83, 237, 1) 100%);      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 900px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .education-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .education-card img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .education-content {
+      flex: 1;
+      padding: 20px 30px;
+      text-align: left;
+    }
+
+    .education-content h3 {
+      color: #001d6e;
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .education-content p {
+      color: #333;
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    .education-content .status {
+      color: green;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .education-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .education-card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .education-content {
+        text-align: center;
+      }
+    }
  /* ----------Skills Section---------- */
 .skills {
   font-family:"Raleway-bold";
@@ -256,7 +363,9 @@ body {
 .projects-section {
   max-width: 1000px;
   margin: 2rem auto;
+  /* margin-bottom: 100px; */
   padding: 2rem;
+  padding-bottom: 20px;
   /* border: 2px solid #888; */
   border-radius: 10px;
 }
@@ -269,9 +378,10 @@ body {
 
 .project-card {
   display: flex;
+  margin-bottom: 50px;
   flex-direction: row;
   border: 2px solid #ffffff;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   background: #425fb8;
 background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1) 100%);  
@@ -349,6 +459,9 @@ background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1
 
 /* ✅ Responsive for Mobile */
 @media (max-width: 768px) {
+  .projects-section {
+    margin-bottom: 130px;
+  }
   .project-card {
     flex-direction: column;
   }
@@ -448,8 +561,8 @@ background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1
 /* Small phones */
 @media (max-width: 500px) {
   .navbar a {
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 9px;
+    margin: 1px 0;
   }
   .links a{
     font-size: 22px;
@@ -462,7 +575,7 @@ background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1
     height: 68px;
   }
   .navbar{
-    gap: 15px;
+    gap: 10px;
   }
   .home {
     padding-top: 130px;
@@ -498,10 +611,13 @@ background: radial-gradient(circle, rgba(66, 95, 184, 1) 0%, rgba(199, 0, 129, 1
   }
 
   .home-img img {
-    max-width: 100%;
+    max-width: 70%;
   }
   .icon {
     width: 2.875rem;
     height: 2.25rem;
+  }
+  .btn-box{
+    font-size: 12px;
   }
 }
