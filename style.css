@@ -279,7 +279,10 @@ body {
 
     .education-section h2 {
       font-size: 2rem;
-      color: #000000;
+        text-shadow: rgb(52, 109, 232) 1px 1px ;
+      background: white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;   
       display: inline-flex;
       align-items: center;  
       gap: 10px;
@@ -377,6 +380,12 @@ body {
 .skill-header {
   margin-bottom: 1rem;
 }
+.skill-header{
+    text-shadow: rgb(52, 109, 232) 1px 1px ;
+      background: white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
 .skills-wrapper img {
   padding: .25rem;
@@ -409,7 +418,11 @@ body {
 .section-title {
   text-align: center;
   font-size: 2rem;
+  text-shadow: rgb(52, 109, 232) 1px 1px ;
   margin-bottom: 2rem;
+        background: white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
 .project-card {
